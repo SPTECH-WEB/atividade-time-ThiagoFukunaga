@@ -56,10 +56,40 @@ public class Time {
         Integer aproveitamentoAdv = adversario.getAproveitamento();
 
         if (aproveitamentoAdv > getAproveitamento()){
-            System.out.println("O time "+ adversario.nome +
+            System.out.println("Time: "+nome+"\n" +
+                    "Vitórias: "+vitorias+"\n" +
+                    "Empates: "+empates+"\n" +
+                    "Derrotas: "+derrotas+"\n" +
+                    "Pontos: "+getPontos()+"\n" +
+                    "Total de Partidas: "+getTotalPartidas()+"\n" +
+                    "Aproveitamento: "+getAproveitamento()+"%\n" +
+                    "\n \n ----"+
+                    "Time: "+adversario.nome+"\n" +
+                    "Vitórias: "+adversario.vitorias+"\n" +
+                    "Empates: "+adversario.empates+"\n" +
+                    "Derrotas: "+adversario.derrotas+"\n" +
+                    "Pontos: "+adversario.getPontos()+"\n" +
+                    "Total de Partidas: "+adversario.getTotalPartidas()+"\n" +
+                    "Aproveitamento: "+adversario.getAproveitamento()+"%\n" +
+                    "O time "+ adversario.nome +
                     " teve um aproveitamento maior que o time"+ nome+".");
         } else if (aproveitamentoAdv < getAproveitamento()) {
-            System.out.println("O time "+ nome +
+            System.out.println("Time: "+nome+"\n" +
+                    "Vitórias: "+vitorias+"\n" +
+                    "Empates: "+empates+"\n" +
+                    "Derrotas: "+derrotas+"\n" +
+                    "Pontos: "+getPontos()+"\n" +
+                    "Total de Partidas: "+getTotalPartidas()+"\n" +
+                    "Aproveitamento: "+getAproveitamento()+"%\n" +
+                    "\n \n ----"+
+                    "Time: "+adversario.nome+"\n" +
+                    "Vitórias: "+adversario.vitorias+"\n" +
+                    "Empates: "+adversario.empates+"\n" +
+                    "Derrotas: "+adversario.derrotas+"\n" +
+                    "Pontos: "+adversario.getPontos()+"\n" +
+                    "Total de Partidas: "+adversario.getTotalPartidas()+"\n" +
+                    "Aproveitamento: "+adversario.getAproveitamento()+"%\n" +
+                    "O time "+ nome +
                     " teve um aproveitamento maior que o time "+ adversario.nome+".");
         }else if (aproveitamentoAdv.equals(getAproveitamento())){
             System.out.println("O time"+ adversario.nome+ " e "+
